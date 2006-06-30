@@ -4,10 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 /**
  * <p>Project: APL_Problem_Database </p>
- * <p>file: $URL: file:///home/adrian/Documents/SVNRepository/Java/APL_Problem_Database/trunk/APL_Problem_Database/src/org/amc/util/Utils.java $<p>
+ * <p>file: $URL$<p>
  * <p>Created on May 21, 2006</p>
  * @author adrian
- * @version $Revision: 375 $
+ * @version $Revision$
  */
 
 public class Utils

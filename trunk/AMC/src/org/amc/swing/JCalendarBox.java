@@ -12,10 +12,10 @@ import javax.swing.event.*;
 import org.amc.util.*;
 /**
  * <p>Project: APL_Problem_Database </p>
- * <p>file: $URL: file:///home/adrian/Documents/SVNRepository/Java/APL_Problem_Database/trunk/APL_Problem_Database/src/org/amc/swing/JCalendarBox.java $<p>
+ * <p>file: $URL$<p>
  * <p>Created on Jun 7, 2006</p>
  * @author adrian
- * @version $Revision: 573 $
+ * @version $Revision$
  */
 
 public class JCalendarBox extends JPanel implements MyObserver

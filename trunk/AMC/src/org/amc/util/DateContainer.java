@@ -3,10 +3,10 @@ import java.util.*;
 import java.text.*;
 /**
  * <p>Project: APL_Problem_Database </p>
- * <p>file: $URL: file:///home/adrian/Documents/SVNRepository/Java/APL_Problem_Database/trunk/APL_Problem_Database/src/org/amc/util/DateContainer.java $<p>
+ * <p>file: $URL$<p>
  * <p>Created on Jun 4, 2006</p>
  * @author adrian
- * @version $Revision: 573 $
+ * @version $Revision$
  */
 
 public class DateContainer

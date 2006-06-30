@@ -11,10 +11,10 @@ import org.amc.swing.calendar.*;
 import javax.swing.ListCellRenderer;
 /**
  * <p>Project: APL_Problem_Database </p>
- * <p>file: $URL: file:///home/adrian/Documents/SVNRepository/Java/APL_Problem_Database/trunk/APL_Problem_Database/src/org/amc/swing/JCalendar.java $<p>
+ * <p>file: $URL$<p>
  * <p>Created on Jun 7, 2006</p>
  * @author adrian
- * @version $Revision: 573 $
+ * @version $Revision$
  */
 
 public class JCalendar extends JPopupMenu implements MyObserver

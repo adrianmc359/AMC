@@ -3,10 +3,10 @@ import org.amc.util.CalendarUtils.MONTH;
 import org.amc.util.CalendarUtils.DAY;
 /**
  * <p>Project: APL_Problem_Database </p>
- * <p>file: $URL: file:///home/adrian/Documents/SVNRepository/Java/APL_Problem_Database/trunk/APL_Problem_Database/src/org/amc/util/Month.java $<p>
+ * <p>file: $URL$<p>
  * <p>Created on Jun 6, 2006</p>
  * @author adrian
- * @version $Revision: 545 $
+ * @version $Revision$
  */
 
 public class Month extends DefaultSubject

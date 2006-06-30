@@ -6,10 +6,10 @@ import org.amc.util.CalendarUtils.DAY;
 import org.amc.util.*;
 /**
  * <p>Project: APL_Problem_Database </p>
- * <p>file: $URL: file:///home/adrian/Documents/SVNRepository/Java/APL_Problem_Database/trunk/APL_Problem_Database/src/org/amc/util/test/MonthTest.java $<p>
+ * <p>file: $URL$<p>
  * <p>Created on Jun 6, 2006</p>
  * @author adrian
- * @version $Revision: 546 $
+ * @version $Revision$
  */
 
 public class MonthTest extends TestCase

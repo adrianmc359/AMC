@@ -7,14 +7,14 @@ import java.util.Enumeration;
  * Project: APL_Problem_Database
  * </p>
  * <p>
- * file: $URL: file:///home/adrian/Documents/SVNRepository/Java/APL_Problem_Database/trunk/APL_Problem_Database/src/org/amc/util/DefaultSubject.java $
+ * file: $URL$
  * <p>
  * <p>
  * Created on May 7, 2006
  * </p>
  * 
  * @author adrian
- * @version $Revision: 472 $
+ * @version $Revision$
  */
 
 public class DefaultSubject implements Subject
