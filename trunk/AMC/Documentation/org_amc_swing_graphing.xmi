@@ -1,0 +1,1898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMI xmlns:UML="http://schema.omg.org/spec/UML/1.3" verified="false" timestamp="2006-06-30T19:22:31" xmi.version="1.2" >
+ <XMI.header>
+  <XMI.documentation>
+   <XMI.exporter>umbrello uml modeller http://uml.sf.net</XMI.exporter>
+   <XMI.exporterVersion>1.5.3</XMI.exporterVersion>
+   <XMI.exporterEncoding>UnicodeUTF8</XMI.exporterEncoding>
+  </XMI.documentation>
+  <XMI.metamodel xmi.name="UML" href="UML.xml" xmi.version="1.3" />
+ </XMI.header>
+ <XMI.content>
+  <UML:Model isSpecification="false" isLeaf="false" isRoot="false" xmi.id="m1" isAbstract="false" name="UML Model" >
+   <UML:Namespace.ownedElement>
+    <UML:Stereotype isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="3" isRoot="false" isAbstract="false" name="datatype" />
+    <UML:Stereotype isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="13" isRoot="false" isAbstract="false" name="interface" />
+    <UML:DataType stereotype="3" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="2" isRoot="false" isAbstract="false" name="int" />
+    <UML:DataType stereotype="3" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="4" isRoot="false" isAbstract="false" name="char" />
+    <UML:DataType stereotype="3" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="5" isRoot="false" isAbstract="false" name="boolean" />
+    <UML:DataType stereotype="3" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="6" isRoot="false" isAbstract="false" name="float" />
+    <UML:DataType stereotype="3" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="7" isRoot="false" isAbstract="false" name="double" />
+    <UML:DataType stereotype="3" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="8" isRoot="false" isAbstract="false" name="byte" />
+    <UML:DataType stereotype="3" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="9" isRoot="false" isAbstract="false" name="short" />
+    <UML:DataType stereotype="3" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="10" isRoot="false" isAbstract="false" name="long" />
+    <UML:DataType stereotype="3" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="11" isRoot="false" isAbstract="false" name="String" />
+    <UML:Class isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="19" isRoot="false" isAbstract="false" name="Canvas" />
+    <UML:Class isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="25" isRoot="false" isAbstract="false" name="double[]" />
+    <UML:Class isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="26" isRoot="false" isAbstract="false" name="Object[]" />
+    <UML:Class isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="38" isRoot="false" isAbstract="false" name="S" />
+    <UML:Package isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="68" isRoot="false" isAbstract="false" name="org.amc.swing.graph" >
+     <UML:Namespace.ownedElement>
+      <UML:Interface stereotype="13" isSpecification="false" isLeaf="false" visibility="public" namespace="68" xmi.id="12" isRoot="false" isAbstract="true" name="Graph" >
+       <UML:Classifier.feature>
+        <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="34" isRoot="false" isAbstract="false" isQuery="false" name="getTitle" >
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" xmi.id="100" type="11" />
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="37" isRoot="false" isAbstract="false" isQuery="false" name="setTitle" >
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" visibility="private" xmi.id="40" value="" type="11" name="title" />
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Interface>
+      <UML:Class isSpecification="false" isLeaf="false" visibility="public" namespace="68" xmi.id="14" isRoot="false" isAbstract="true" name="AbstractGraph" >
+       <UML:Classifier.feature>
+        <UML:Attribute isSpecification="false" visibility="private" xmi.id="18" type="19" name="canvas" />
+        <UML:Attribute isSpecification="false" visibility="private" xmi.id="20" type="11" name="x_axis" />
+        <UML:Attribute isSpecification="false" visibility="private" xmi.id="21" type="11" name="y_axis" />
+        <UML:Attribute isSpecification="false" visibility="private" xmi.id="22" type="26" name="x_values" />
+        <UML:Attribute isSpecification="false" visibility="private" xmi.id="24" type="25" name="y_values" />
+        <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="27" isRoot="false" isAbstract="false" isQuery="false" name="AbstractGraph" />
+        <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="28" isRoot="false" isAbstract="false" isQuery="false" name="AbstractGraph" >
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" visibility="private" xmi.id="31" value="" type="11" name="x_axis" />
+          <UML:Parameter isSpecification="false" visibility="private" xmi.id="32" value="" type="11" name="y_axis" />
+          <UML:Parameter isSpecification="false" visibility="private" xmi.id="29" value="" type="26" name="x_values" />
+          <UML:Parameter isSpecification="false" visibility="private" xmi.id="30" value="" type="25" name="y_values" />
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class isSpecification="false" isLeaf="false" visibility="public" namespace="68" xmi.id="52" isRoot="false" isAbstract="false" name="XY_Graph" >
+       <UML:GeneralizableElement.generalization>
+        <UML:Generalization xmi.idref="54" />
+       </UML:GeneralizableElement.generalization>
+      </UML:Class>
+      <UML:Class isSpecification="false" isLeaf="false" visibility="public" namespace="68" xmi.id="60" isRoot="false" isAbstract="false" name="Bar_Graph" >
+       <UML:GeneralizableElement.generalization>
+        <UML:Generalization xmi.idref="63" />
+       </UML:GeneralizableElement.generalization>
+      </UML:Class>
+     </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Abstraction isSpecification="false" visibility="public" namespace="m1" xmi.id="15" client="14" name="" supplier="12" />
+    <UML:Generalization isSpecification="false" child="52" visibility="public" namespace="m1" xmi.id="54" parent="14" discriminator="" name="" />
+    <UML:Generalization isSpecification="false" child="60" visibility="public" namespace="m1" xmi.id="63" parent="14" discriminator="" name="" />
+   </UML:Namespace.ownedElement>
+  </UML:Model>
+ </XMI.content>
+ <XMI.extensions xmi.extender="umbrello" >
+  <docsettings viewid="1" documentation="" uniqueid="100" />
+  <diagrams>
+   <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" linewidth="0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1009" snapy="10" showatts="1" xmi.id="1" documentation="" type="402" showops="1" showpackage="0" name="class diagram" localid="900000" showstereotype="0" showscope="1" snapcsgrid="0" font="Helvetica,12,-1,5,50,0,0,0,0,0" linecolor="#ff0000" canvasheight="569" >
+    <widgets>
+     <interfacewidget usesdiagramfillcolour="0" width="151" usesdiagramusefillcolour="0" x="387" y="21" drawascircle="0" showopsigs="601" linewidth="none" fillcolour="#ffffc0" height="82" usefillcolor="1" showpubliconly="0" isinstance="0" xmi.id="12" showoperations="1" showpackage="0" showscope="1" showstereotype="1" font="Helvetica,12,-1,5,75,1,0,0,0,0" linecolor="#ff0000" />
+     <classwidget usesdiagramfillcolour="0" width="568" showattsigs="601" usesdiagramusefillcolour="0" x="178" y="191" drawascircle="0" showopsigs="601" linewidth="none" fillcolour="#ffffc0" height="136" usefillcolor="1" showpubliconly="0" showattributes="1" isinstance="0" xmi.id="14" showoperations="1" showpackage="0" showscope="1" font="Helvetica,12,-1,5,75,1,0,0,0,0" linecolor="#ff0000" />
+     <classwidget usesdiagramfillcolour="1" width="81" showattsigs="601" usesdiagramusefillcolour="1" x="275" y="409" showopsigs="601" linewidth="none" fillcolour="none" height="33" usefillcolor="1" showpubliconly="0" showattributes="1" isinstance="0" xmi.id="52" showoperations="1" showpackage="0" showscope="1" font="Helvetica,12,-1,5,75,0,0,0,0,0" linecolor="none" />
+     <classwidget usesdiagramfillcolour="1" width="86" showattsigs="601" usesdiagramusefillcolour="1" x="514" y="409" showopsigs="601" linewidth="none" fillcolour="none" height="33" usefillcolor="1" showpubliconly="0" showattributes="1" isinstance="0" xmi.id="60" showoperations="1" showpackage="0" showscope="1" font="Helvetica,12,-1,5,75,0,0,0,0,0" linecolor="none" />
+    </widgets>
+    <messages/>
+    <associations>
+     <assocwidget totalcounta="2" indexa="1" totalcountb="2" indexb="1" linewidth="none" widgetbid="12" widgetaid="14" xmi.id="15" linecolor="none" >
+      <linepath>
+       <startpoint startx="462" starty="191" />
+       <endpoint endx="462" endy="103" />
+      </linepath>
+     </assocwidget>
+     <assocwidget totalcounta="2" indexa="1" totalcountb="3" indexb="1" linewidth="none" widgetbid="14" widgetaid="52" xmi.id="54" linecolor="none" >
+      <linepath>
+       <startpoint startx="315" starty="409" />
+       <endpoint endx="367" endy="327" />
+      </linepath>
+     </assocwidget>
+     <assocwidget totalcounta="2" indexa="1" totalcountb="3" indexb="2" linewidth="none" widgetbid="14" widgetaid="60" xmi.id="63" linecolor="none" >
+      <linepath>
+       <startpoint startx="557" starty="409" />
+       <endpoint endx="556" endy="327" />
+      </linepath>
+     </assocwidget>
+    </associations>
+   </diagram>
+  </diagrams>
+  <listview>
+   <listitem open="1" type="800" label="Views" >
+    <listitem open="1" type="801" label="Logical View" >
+     <listitem open="1" type="813" id="19" />
+     <listitem open="1" type="813" id="26" />
+     <listitem open="1" type="813" id="38" />
+     <listitem open="1" type="813" id="25" />
+     <listitem open="1" type="818" id="68" >
+      <listitem open="0" type="813" id="14" >
+       <listitem open="0" type="814" id="18" />
+       <listitem open="0" type="814" id="20" />
+       <listitem open="0" type="814" id="21" />
+       <listitem open="0" type="814" id="22" />
+       <listitem open="0" type="814" id="24" />
+       <listitem open="0" type="815" id="27" />
+       <listitem open="0" type="815" id="28" />
+      </listitem>
+      <listitem open="0" type="813" id="60" />
+      <listitem open="0" type="813" id="52" />
+      <listitem open="0" type="817" id="12" >
+       <listitem open="0" type="815" id="34" />
+       <listitem open="0" type="815" id="37" />
+      </listitem>
+     </listitem>
+     <listitem open="1" type="830" label="Datatypes" >
+      <listitem open="1" type="829" id="11" />
+      <listitem open="1" type="829" id="5" />
+      <listitem open="1" type="829" id="8" />
+      <listitem open="1" type="829" id="4" />
+      <listitem open="1" type="829" id="7" />
+      <listitem open="1" type="829" id="6" />
+      <listitem open="1" type="829" id="2" />
+      <listitem open="1" type="829" id="10" />
+      <listitem open="1" type="829" id="9" />
+     </listitem>
+    </listitem>
+    <listitem open="1" type="802" label="Use Case View" />
+    <listitem open="1" type="821" label="Component View" />
+    <listitem open="1" type="827" label="Deployment View" />
+    <listitem open="1" type="836" label="Entity Relationship Model" />
+   </listitem>
+  </listview>
+  <codegeneration>
+   <codegenerator language="Java" >
+    <codedocument writeOutCode="false" package="-1" id="ANTDOC" fileExt=".xml" fileName="build" >
+     <textblocks>
+      <codeblockwithcomments tag="xmlDecl" text="&lt;?xml version=&quot;1.0&quot;?>" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <xmlelementblock nodeName="project" tag="projectDecl" canDelete="false" >
+       <header>
+        <codecomment tag="" text="Java ANT build document" />
+       </header>
+       <textblocks/>
+      </xmlelementblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+    </codedocument>
+    <classifiercodedocument writeOutCode="true" package="-1" id="2" parent_class="2" fileExt=".java" fileName="int" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="2" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class Int&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public Int ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields/>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="-1" id="4" parent_class="4" fileExt=".java" fileName="char" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="4" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class Char&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public Char ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields/>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="-1" id="5" parent_class="5" fileExt=".java" fileName="boolean" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="5" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class Boolean&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public Boolean ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields/>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="-1" id="6" parent_class="6" fileExt=".java" fileName="float" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="6" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class Float&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public Float ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields/>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="-1" id="7" parent_class="7" fileExt=".java" fileName="double" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="7" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class Double&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public Double ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields/>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="-1" id="8" parent_class="8" fileExt=".java" fileName="byte" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="8" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class Byte&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public Byte ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields/>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="-1" id="9" parent_class="9" fileExt=".java" fileName="short" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="9" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class Short&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public Short ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields/>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="-1" id="10" parent_class="10" fileExt=".java" fileName="long" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="10" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class Long&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public Long ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields/>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="-1" id="11" parent_class="11" fileExt=".java" fileName="String" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="11" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class String&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public String ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields/>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="68" id="12" parent_class="12" fileExt=".java" fileName="Graph" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" text="package org.amc.swing.graph;&amp;#010;" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="12" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Interface Graph&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" writeOutText="false" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public Graph ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks>
+            <codeoperation parent_id="34" tag="operation_34" canDelete="false" indentLevel="1" >
+             <header>
+              <javacodedocumentation tag="" indentLevel="1" text="&amp;#010;@return String  " />
+             </header>
+            </codeoperation>
+            <codeoperation parent_id="37" tag="operation_37" canDelete="false" indentLevel="1" >
+             <header>
+              <javacodedocumentation tag="" indentLevel="1" text="&amp;#010;@param title &amp;#010;@return void  " />
+             </header>
+            </codeoperation>
+           </textblocks>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields>
+      <codeclassfield parent_id="15" field_type="-1" initialValue="" role_id="0" writeOutMethods="true" listClassName="" >
+       <header>
+        <codecomment tag="" />
+       </header>
+       <ccfdeclarationcodeblock parent_id="15" tag="" canDelete="false" writeOutText="false" indentLevel="1" role_id="1" text="public AbstractGraph  = new AbstractGraph ( );" >
+        <header>
+         <codecomment tag="" writeOutText="false" indentLevel="1" />
+        </header>
+       </ccfdeclarationcodeblock>
+       <codeaccessormethod accessType="0" parent_id="15" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="15" role_id="1" text="return ;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the value of &amp;#010;&amp;#010;@return the value of " />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="1" parent_id="15" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="15" role_id="1" text=" = value;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Set the value of &amp;#010;&amp;#010;" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="2" parent_id="15" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="15" role_id="1" text=".add(value);" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Add an object of type AbstractGraph to the List &amp;#010;&amp;#010;@return void" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="3" parent_id="15" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="15" role_id="1" text=".remove(value);" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Remove an object of type AbstractGraph from the List &amp;#010;" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="4" parent_id="15" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="15" role_id="1" text="return (List) ;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the list of &amp;#010;&amp;#010;@return List of " />
+        </header>
+       </codeaccessormethod>
+      </codeclassfield>
+     </classfields>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="68" id="14" parent_class="14" fileExt=".java" fileName="AbstractGraph" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" text="package org.amc.swing.graph;&amp;#010;" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" text="&amp;#010;import Object__;&amp;#010;import double__;&amp;#010;import Canvas;" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="14" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class AbstractGraph&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks>
+          <ccfdeclarationcodeblock parent_id="18" tag="tblock_0" canDelete="false" indentLevel="1" text="private Canvas canvas;" >
+           <header>
+            <codecomment tag="" indentLevel="1" />
+           </header>
+          </ccfdeclarationcodeblock>
+          <ccfdeclarationcodeblock parent_id="20" tag="tblock_2" canDelete="false" indentLevel="1" text="private String x_axis;" >
+           <header>
+            <codecomment tag="" indentLevel="1" />
+           </header>
+          </ccfdeclarationcodeblock>
+          <ccfdeclarationcodeblock parent_id="21" tag="tblock_5" canDelete="false" indentLevel="1" text="private String y_axis;" >
+           <header>
+            <codecomment tag="" indentLevel="1" />
+           </header>
+          </ccfdeclarationcodeblock>
+          <ccfdeclarationcodeblock parent_id="22" tag="tblock_8" canDelete="false" indentLevel="1" text="private Object__ x_values;" >
+           <header>
+            <codecomment tag="" indentLevel="1" />
+           </header>
+          </ccfdeclarationcodeblock>
+          <ccfdeclarationcodeblock parent_id="24" tag="tblock_11" canDelete="false" indentLevel="1" text="private double__ y_values;" >
+           <header>
+            <codecomment tag="" indentLevel="1" />
+           </header>
+          </ccfdeclarationcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public AbstractGraph ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+            <codeoperation parent_id="27" tag="operation_27" canDelete="false" indentLevel="1" >
+             <header>
+              <javacodedocumentation tag="" indentLevel="1" />
+             </header>
+            </codeoperation>
+            <codeoperation parent_id="28" tag="operation_28" canDelete="false" indentLevel="1" >
+             <header>
+              <javacodedocumentation tag="" indentLevel="1" text="&amp;#010;@param x_axis &amp;#010;@param y_axis &amp;#010;@param x_values &amp;#010;@param y_values " />
+             </header>
+            </codeoperation>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks>
+              <codeaccessormethod accessType="0" parent_id="18" tag="hblock_tag_0" canDelete="false" indentLevel="1" classfield_id="18" text="return canvas;" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Get the value of canvas&amp;#010;&amp;#010;@return the value of canvas" />
+               </header>
+              </codeaccessormethod>
+              <codeaccessormethod accessType="1" parent_id="18" tag="hblock_tag_1" canDelete="false" indentLevel="1" classfield_id="18" text="canvas = value;" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Set the value of canvas&amp;#010;&amp;#010;" />
+               </header>
+              </codeaccessormethod>
+              <codeaccessormethod accessType="0" parent_id="20" tag="hblock_tag_3" canDelete="false" indentLevel="1" classfield_id="20" text="return x_axis;" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Get the value of x_axis&amp;#010;&amp;#010;@return the value of x_axis" />
+               </header>
+              </codeaccessormethod>
+              <codeaccessormethod accessType="1" parent_id="20" tag="hblock_tag_4" canDelete="false" indentLevel="1" classfield_id="20" text="x_axis = value;" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Set the value of x_axis&amp;#010;&amp;#010;" />
+               </header>
+              </codeaccessormethod>
+              <codeaccessormethod accessType="0" parent_id="21" tag="hblock_tag_6" canDelete="false" indentLevel="1" classfield_id="21" text="return y_axis;" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Get the value of y_axis&amp;#010;&amp;#010;@return the value of y_axis" />
+               </header>
+              </codeaccessormethod>
+              <codeaccessormethod accessType="1" parent_id="21" tag="hblock_tag_7" canDelete="false" indentLevel="1" classfield_id="21" text="y_axis = value;" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Set the value of y_axis&amp;#010;&amp;#010;" />
+               </header>
+              </codeaccessormethod>
+              <codeaccessormethod accessType="0" parent_id="22" tag="hblock_tag_9" canDelete="false" indentLevel="1" classfield_id="22" text="return x_values;" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Get the value of x_values&amp;#010;&amp;#010;@return the value of x_values" />
+               </header>
+              </codeaccessormethod>
+              <codeaccessormethod accessType="1" parent_id="22" tag="hblock_tag_10" canDelete="false" indentLevel="1" classfield_id="22" text="x_values = value;" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Set the value of x_values&amp;#010;&amp;#010;" />
+               </header>
+              </codeaccessormethod>
+              <codeaccessormethod accessType="0" parent_id="24" tag="hblock_tag_12" canDelete="false" indentLevel="1" classfield_id="24" text="return y_values;" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Get the value of y_values&amp;#010;&amp;#010;@return the value of y_values" />
+               </header>
+              </codeaccessormethod>
+              <codeaccessormethod accessType="1" parent_id="24" tag="hblock_tag_13" canDelete="false" indentLevel="1" classfield_id="24" text="y_values = value;" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Set the value of y_values&amp;#010;&amp;#010;" />
+               </header>
+              </codeaccessormethod>
+             </textblocks>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields>
+      <codeclassfield parent_id="15" field_type="7471175" initialValue="" role_id="1" writeOutMethods="true" listClassName="" >
+       <header>
+        <codecomment tag="" />
+       </header>
+       <ccfdeclarationcodeblock parent_id="15" tag="" canDelete="false" writeOutText="false" indentLevel="1" role_id="0" text="public Graph ;" >
+        <header>
+         <codecomment tag="" writeOutText="false" indentLevel="1" />
+        </header>
+       </ccfdeclarationcodeblock>
+       <codeaccessormethod accessType="0" parent_id="15" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="15" role_id="0" text="return ;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the value of &amp;#010;&amp;#010;@return the value of " />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="1" parent_id="15" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="15" role_id="0" text=" = value;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Set the value of &amp;#010;&amp;#010;" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="2" parent_id="15" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="15" role_id="0" text=".add(value);" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Add an object of type Graph to the List &amp;#010;&amp;#010;@return void" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="3" parent_id="15" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="15" role_id="0" text=".remove(value);" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Remove an object of type Graph from the List &amp;#010;" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="4" parent_id="15" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="15" role_id="0" text="return (List) ;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the list of &amp;#010;&amp;#010;@return List of " />
+        </header>
+       </codeaccessormethod>
+      </codeclassfield>
+      <codeclassfield parent_id="18" field_type="0" initialValue="" role_id="-1" writeOutMethods="true" listClassName="" >
+       <header>
+        <codecomment tag="" />
+       </header>
+       <ccfdeclarationcodeblock parent_id="18" tag="tblock_0" canDelete="false" indentLevel="1" text="private Canvas canvas;" >
+        <header>
+         <codecomment tag="" indentLevel="1" />
+        </header>
+       </ccfdeclarationcodeblock>
+       <codeaccessormethod accessType="0" parent_id="18" tag="hblock_tag_0" canDelete="false" indentLevel="1" classfield_id="18" text="return canvas;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the value of canvas&amp;#010;&amp;#010;@return the value of canvas" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="1" parent_id="18" tag="hblock_tag_1" canDelete="false" indentLevel="1" classfield_id="18" text="canvas = value;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Set the value of canvas&amp;#010;&amp;#010;" />
+        </header>
+       </codeaccessormethod>
+      </codeclassfield>
+      <codeclassfield parent_id="20" field_type="0" initialValue="" role_id="-1" writeOutMethods="true" listClassName="" >
+       <header>
+        <codecomment tag="" />
+       </header>
+       <ccfdeclarationcodeblock parent_id="20" tag="tblock_2" canDelete="false" indentLevel="1" text="private String x_axis;" >
+        <header>
+         <codecomment tag="" indentLevel="1" />
+        </header>
+       </ccfdeclarationcodeblock>
+       <codeaccessormethod accessType="0" parent_id="20" tag="hblock_tag_3" canDelete="false" indentLevel="1" classfield_id="20" text="return x_axis;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the value of x_axis&amp;#010;&amp;#010;@return the value of x_axis" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="1" parent_id="20" tag="hblock_tag_4" canDelete="false" indentLevel="1" classfield_id="20" text="x_axis = value;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Set the value of x_axis&amp;#010;&amp;#010;" />
+        </header>
+       </codeaccessormethod>
+      </codeclassfield>
+      <codeclassfield parent_id="21" field_type="0" initialValue="" role_id="-1" writeOutMethods="true" listClassName="" >
+       <header>
+        <codecomment tag="" />
+       </header>
+       <ccfdeclarationcodeblock parent_id="21" tag="tblock_5" canDelete="false" indentLevel="1" text="private String y_axis;" >
+        <header>
+         <codecomment tag="" indentLevel="1" />
+        </header>
+       </ccfdeclarationcodeblock>
+       <codeaccessormethod accessType="0" parent_id="21" tag="hblock_tag_6" canDelete="false" indentLevel="1" classfield_id="21" text="return y_axis;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the value of y_axis&amp;#010;&amp;#010;@return the value of y_axis" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="1" parent_id="21" tag="hblock_tag_7" canDelete="false" indentLevel="1" classfield_id="21" text="y_axis = value;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Set the value of y_axis&amp;#010;&amp;#010;" />
+        </header>
+       </codeaccessormethod>
+      </codeclassfield>
+      <codeclassfield parent_id="22" field_type="0" initialValue="" role_id="-1" writeOutMethods="true" listClassName="" >
+       <header>
+        <codecomment tag="" />
+       </header>
+       <ccfdeclarationcodeblock parent_id="22" tag="tblock_8" canDelete="false" indentLevel="1" text="private Object__ x_values;" >
+        <header>
+         <codecomment tag="" indentLevel="1" />
+        </header>
+       </ccfdeclarationcodeblock>
+       <codeaccessormethod accessType="0" parent_id="22" tag="hblock_tag_9" canDelete="false" indentLevel="1" classfield_id="22" text="return x_values;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the value of x_values&amp;#010;&amp;#010;@return the value of x_values" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="1" parent_id="22" tag="hblock_tag_10" canDelete="false" indentLevel="1" classfield_id="22" text="x_values = value;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Set the value of x_values&amp;#010;&amp;#010;" />
+        </header>
+       </codeaccessormethod>
+      </codeclassfield>
+      <codeclassfield parent_id="24" field_type="0" initialValue="" role_id="-1" writeOutMethods="true" listClassName="" >
+       <header>
+        <codecomment tag="" />
+       </header>
+       <ccfdeclarationcodeblock parent_id="24" tag="tblock_11" canDelete="false" indentLevel="1" text="private double__ y_values;" >
+        <header>
+         <codecomment tag="" indentLevel="1" />
+        </header>
+       </ccfdeclarationcodeblock>
+       <codeaccessormethod accessType="0" parent_id="24" tag="hblock_tag_12" canDelete="false" indentLevel="1" classfield_id="24" text="return y_values;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the value of y_values&amp;#010;&amp;#010;@return the value of y_values" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="1" parent_id="24" tag="hblock_tag_13" canDelete="false" indentLevel="1" classfield_id="24" text="y_values = value;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Set the value of y_values&amp;#010;&amp;#010;" />
+        </header>
+       </codeaccessormethod>
+      </codeclassfield>
+      <codeclassfield parent_id="54" field_type="14" initialValue="" role_id="0" writeOutMethods="true" listClassName="" >
+       <header>
+        <codecomment tag="" />
+       </header>
+       <ccfdeclarationcodeblock parent_id="54" tag="" canDelete="false" writeOutText="false" indentLevel="1" role_id="1" text="public XY_Graph  = new XY_Graph ( );" >
+        <header>
+         <codecomment tag="" writeOutText="false" indentLevel="1" />
+        </header>
+       </ccfdeclarationcodeblock>
+       <codeaccessormethod accessType="0" parent_id="54" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="1" text="return ;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the value of &amp;#010;&amp;#010;@return the value of " />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="1" parent_id="54" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="1" text=" = value;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Set the value of &amp;#010;&amp;#010;" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="2" parent_id="54" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="1" text=".add(value);" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Add an object of type XY_Graph to the List &amp;#010;&amp;#010;@return void" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="3" parent_id="54" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="1" text=".remove(value);" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Remove an object of type XY_Graph from the List &amp;#010;" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="4" parent_id="54" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="1" text="return (List) ;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the list of &amp;#010;&amp;#010;@return List of " />
+        </header>
+       </codeaccessormethod>
+      </codeclassfield>
+      <codeclassfield parent_id="63" field_type="2" initialValue="" role_id="0" writeOutMethods="true" listClassName="" >
+       <header>
+        <codecomment tag="" />
+       </header>
+       <ccfdeclarationcodeblock parent_id="63" tag="" canDelete="false" writeOutText="false" indentLevel="1" role_id="1" text="public Bar_Graph  = new Bar_Graph ( );" >
+        <header>
+         <codecomment tag="" writeOutText="false" indentLevel="1" />
+        </header>
+       </ccfdeclarationcodeblock>
+       <codeaccessormethod accessType="0" parent_id="63" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="63" role_id="1" text="return ;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the value of &amp;#010;&amp;#010;@return the value of " />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="1" parent_id="63" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="63" role_id="1" text=" = value;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Set the value of &amp;#010;&amp;#010;" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="2" parent_id="63" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="63" role_id="1" text=".add(value);" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Add an object of type Bar_Graph to the List &amp;#010;&amp;#010;@return void" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="3" parent_id="63" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="63" role_id="1" text=".remove(value);" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Remove an object of type Bar_Graph from the List &amp;#010;" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="4" parent_id="63" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="63" role_id="1" text="return (List) ;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the list of &amp;#010;&amp;#010;@return List of " />
+        </header>
+       </codeaccessormethod>
+      </codeclassfield>
+     </classfields>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="-1" id="19" parent_class="19" fileExt=".java" fileName="Canvas" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="19" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class Canvas&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public Canvas ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields/>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="-1" id="25" parent_class="25" fileExt=".java" fileName="double__" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="25" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class Double__&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public Double__ ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields/>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="-1" id="26" parent_class="26" fileExt=".java" fileName="Object__" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="26" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class Object__&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public Object__ ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields/>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="-1" id="38" parent_class="38" fileExt=".java" fileName="S" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="38" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class S&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public S ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields/>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="68" id="52" parent_class="52" fileExt=".java" fileName="XY_Graph" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" text="package org.amc.swing.graph;&amp;#010;" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="52" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class XY_Graph&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks>
+          <ccfdeclarationcodeblock parent_id="54" tag="tblock_0" canDelete="false" writeOutText="false" indentLevel="1" role_id="0" text="public AbstractGraph  = new AbstractGraph ( );" >
+           <header>
+            <codecomment tag="" writeOutText="false" indentLevel="1" />
+           </header>
+          </ccfdeclarationcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public XY_Graph ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks>
+              <codeaccessormethod accessType="0" parent_id="54" tag="hblock_tag_0" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="0" text="return ;" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Get the value of &amp;#010;&amp;#010;@return the value of " />
+               </header>
+              </codeaccessormethod>
+              <codeaccessormethod accessType="1" parent_id="54" tag="hblock_tag_1" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="0" text=" = value;" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Set the value of &amp;#010;&amp;#010;" />
+               </header>
+              </codeaccessormethod>
+              <codeaccessormethod accessType="2" parent_id="54" tag="hblock_tag_2" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="0" text=".add(value);" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Add an object of type AbstractGraph to the List &amp;#010;&amp;#010;@return void" />
+               </header>
+              </codeaccessormethod>
+              <codeaccessormethod accessType="3" parent_id="54" tag="hblock_tag_3" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="0" text=".remove(value);" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Remove an object of type AbstractGraph from the List &amp;#010;" />
+               </header>
+              </codeaccessormethod>
+              <codeaccessormethod accessType="4" parent_id="54" tag="hblock_tag_4" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="0" text="return (List) ;" >
+               <header>
+                <javacodedocumentation tag="" indentLevel="1" text="Get the list of &amp;#010;&amp;#010;@return List of " />
+               </header>
+              </codeaccessormethod>
+             </textblocks>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields>
+      <codeclassfield parent_id="54" field_type="0" initialValue="" role_id="1" writeOutMethods="true" listClassName="" >
+       <header>
+        <codecomment tag="" />
+       </header>
+       <ccfdeclarationcodeblock parent_id="54" tag="tblock_0" canDelete="false" writeOutText="false" indentLevel="1" role_id="0" text="public AbstractGraph  = new AbstractGraph ( );" >
+        <header>
+         <codecomment tag="" writeOutText="false" indentLevel="1" />
+        </header>
+       </ccfdeclarationcodeblock>
+       <codeaccessormethod accessType="0" parent_id="54" tag="hblock_tag_0" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="0" text="return ;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the value of &amp;#010;&amp;#010;@return the value of " />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="1" parent_id="54" tag="hblock_tag_1" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="0" text=" = value;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Set the value of &amp;#010;&amp;#010;" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="2" parent_id="54" tag="hblock_tag_2" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="0" text=".add(value);" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Add an object of type AbstractGraph to the List &amp;#010;&amp;#010;@return void" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="3" parent_id="54" tag="hblock_tag_3" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="0" text=".remove(value);" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Remove an object of type AbstractGraph from the List &amp;#010;" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="4" parent_id="54" tag="hblock_tag_4" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="54" role_id="0" text="return (List) ;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the list of &amp;#010;&amp;#010;@return List of " />
+        </header>
+       </codeaccessormethod>
+      </codeclassfield>
+     </classfields>
+    </classifiercodedocument>
+    <classifiercodedocument writeOutCode="true" package="68" id="60" parent_class="60" fileExt=".java" fileName="Bar_Graph" >
+     <textblocks>
+      <codeblockwithcomments tag="packages" text="package org.amc.swing.graph;&amp;#010;" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <codeblockwithcomments tag="imports" writeOutText="false" >
+       <header>
+        <codecomment tag="" writeOutText="false" />
+       </header>
+      </codeblockwithcomments>
+      <javaclassdeclarationblock parent_id="60" tag="ClassDeclBlock" canDelete="false" >
+       <header>
+        <javacodedocumentation tag="" text="Class Bar_Graph&amp;#010;" />
+       </header>
+       <textblocks>
+        <hierarchicalcodeblock tag="fieldsDecl" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Fields" />
+         </header>
+         <textblocks/>
+        </hierarchicalcodeblock>
+        <hierarchicalcodeblock tag="methodsBlock" canDelete="false" indentLevel="1" >
+         <header>
+          <codecomment tag="" indentLevel="1" text="Methods" />
+         </header>
+         <textblocks>
+          <hierarchicalcodeblock tag="constructorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Constructors" />
+           </header>
+           <textblocks>
+            <codeblockwithcomments tag="emptyconstructor" writeOutText="false" indentLevel="1" text="public Bar_Graph ( ) { }" >
+             <header>
+              <codecomment tag="" indentLevel="1" text="Empty Constructor" />
+             </header>
+            </codeblockwithcomments>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="accessorMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Accessor Methods" />
+           </header>
+           <textblocks>
+            <hierarchicalcodeblock tag="staticAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+            <hierarchicalcodeblock tag="regularAccessorMethods" canDelete="false" indentLevel="1" >
+             <header>
+              <codecomment tag="" writeOutText="false" indentLevel="1" />
+             </header>
+             <textblocks/>
+            </hierarchicalcodeblock>
+           </textblocks>
+          </hierarchicalcodeblock>
+          <hierarchicalcodeblock tag="operationMethods" canDelete="false" indentLevel="1" >
+           <header>
+            <codecomment tag="" indentLevel="1" text="Operations" />
+           </header>
+           <textblocks/>
+          </hierarchicalcodeblock>
+         </textblocks>
+        </hierarchicalcodeblock>
+       </textblocks>
+      </javaclassdeclarationblock>
+     </textblocks>
+     <header>
+      <codecomment tag="" writeOutText="false" />
+     </header>
+     <classfields>
+      <codeclassfield parent_id="63" field_type="7602208" initialValue="" role_id="1" writeOutMethods="true" listClassName="" >
+       <header>
+        <codecomment tag="" />
+       </header>
+       <ccfdeclarationcodeblock parent_id="63" tag="" canDelete="false" writeOutText="false" indentLevel="1" role_id="0" text="public AbstractGraph  = new AbstractGraph ( );" >
+        <header>
+         <codecomment tag="" writeOutText="false" indentLevel="1" />
+        </header>
+       </ccfdeclarationcodeblock>
+       <codeaccessormethod accessType="0" parent_id="63" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="63" role_id="0" text="return ;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the value of &amp;#010;&amp;#010;@return the value of " />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="1" parent_id="63" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="63" role_id="0" text=" = value;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Set the value of &amp;#010;&amp;#010;" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="2" parent_id="63" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="63" role_id="0" text=".add(value);" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Add an object of type AbstractGraph to the List &amp;#010;&amp;#010;@return void" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="3" parent_id="63" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="63" role_id="0" text=".remove(value);" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Remove an object of type AbstractGraph from the List &amp;#010;" />
+        </header>
+       </codeaccessormethod>
+       <codeaccessormethod accessType="4" parent_id="63" tag="" canDelete="false" writeOutText="false" indentLevel="1" classfield_id="63" role_id="0" text="return (List) ;" >
+        <header>
+         <javacodedocumentation tag="" indentLevel="1" text="Get the list of &amp;#010;&amp;#010;@return List of " />
+        </header>
+       </codeaccessormethod>
+      </codeclassfield>
+     </classfields>
+    </classifiercodedocument>
+   </codegenerator>
+  </codegeneration>
+ </XMI.extensions>
+</XMI>
