@@ -19,11 +19,11 @@ import org.amc.util.CalendarUtils.DAY;
 public class DaysPanel extends JPanel implements MyObserver
 {
 
-	Month month;
+	private Month month;
 	
-	int today;
-	MONTH thisMonth;
-	int year;
+	private int today;
+	private MONTH thisMonth;
+	private int year;
 	private  NumberLabel[] NUMBER_POOL=null;
 	/**
 	 * 

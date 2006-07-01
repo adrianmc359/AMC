@@ -20,9 +20,9 @@ import org.amc.util.*;
 
 public class JCalendarBox extends JPanel implements MyObserver
 {
-	JTextField txt;
-	JButton button;
-	JCalendar calendar;
+	private JTextField txt;
+	private JButton button;
+	private JCalendar calendar;
 	public JCalendarBox()
 	{
 		super();

@@ -18,12 +18,12 @@ public class TopBar extends JPanel implements MyObserver
 {
 
 
-	JLabel monthLabel;
-	JLabel yearLabel;
-	JButton left=new JButton("<-");;
-	JButton right=new JButton("->");
-	Month month;;
-	Color l_blue;
+	private JLabel monthLabel;
+	private JLabel yearLabel;
+	private JButton left=new JButton("<-");;
+	private JButton right=new JButton("->");
+	private Month month;;
+	private Color l_blue;
 	public TopBar(Month month)
 	{
 		super();

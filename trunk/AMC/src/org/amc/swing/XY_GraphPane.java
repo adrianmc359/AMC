@@ -14,7 +14,7 @@ import org.amc.swing.graph.*;
 
 public class XY_GraphPane extends JPanel
 {
-	XY_Graph graph;
+	private XY_Graph graph;
 	/**
 	 * 
 	 * Constructor for XY_GraphPane.java
