@@ -56,6 +56,8 @@ public class JCalendarBox extends JPanel implements MyObserver
 		calendar=new JCalendar();
 		this.calendar.getMonth().attachObserver(this);
 		this.setLayout(new BorderLayout());
+		//Display current date.
+		this.txt.setText(this.calendar.getMonth().toString());
 		this.add(txt,BorderLayout.CENTER);
 		this.add(button,BorderLayout.EAST);
 		button.addMouseListener(new MouseAdapter()
