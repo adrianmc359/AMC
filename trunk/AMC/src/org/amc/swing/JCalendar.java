@@ -22,11 +22,9 @@ public class JCalendar extends JPopupMenu implements MyObserver
 	/**
 	 * Constructor for JCalendar.java
 	 */
-	Month month;
-	DaysPanel dayHolder;
-	TopBar topBar;
-	Box box;
-	JLabel days;
+	private Month month;
+	private DaysPanel dayHolder;
+	private TopBar topBar;
 	public JCalendar()
 	{
 		super();
@@ -43,7 +41,6 @@ public class JCalendar extends JPopupMenu implements MyObserver
 	}
 	private void jbInit() throws Exception
 	{
-		box=Box.createVerticalBox();
 		//this.setBackground(Color.WHITE);
 		//super.setSize(500,100);
 		this.setLayout(new BorderLayout());
