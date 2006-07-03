@@ -27,7 +27,7 @@ public class BarChart_Pane  extends JPanel implements Graph
 	private BarChart graph;
 	private MyCanvas mycanvas; /** This is where the chart goes. */
 	private X_Axis x_axis;
-	private Y_Axis y_axis;
+	private YAxis_Numbered y_axis;
 	private int y_intervals; /** The number of divisions in the Y axis */
 	private double range;	/** The data range */ 
 	/**
@@ -63,7 +63,7 @@ public class BarChart_Pane  extends JPanel implements Graph
 		
 		//setting up axis.
 		x_axis=new X_Axis(0,this.graph.getX_values().length);
-		y_axis=new Y_Axis(0,range,y_intervals);
+		y_axis=new YAxis_Numbered(range,y_intervals);
 		y_axis.setPreferredSize(new Dimension(50,50));
 		add(y_axis,BorderLayout.WEST);
 		x_axis.setPreferredSize(new Dimension(500,50));
@@ -259,7 +259,7 @@ public class BarChart_Pane  extends JPanel implements Graph
 		});
 		String[] x={"Burn Marks","Shorts","Weldlines","flash","scratches","Burn Marks","Shorts","Weldlines","flash","scratches"};
 		double[] y={10,30,50,10,40,10,30,50,10,40};
-		BarChart_Pane bar_chart=new BarChart_Pane(x,y,200,20);
+		BarChart_Pane bar_chart=new BarChart_Pane(x,y,100,10);
 		
 		bar_chart.setTitle("My Graph");
 		bar_chart.setX_axis("X axis");
@@ -317,41 +317,5 @@ public class BarChart_Pane  extends JPanel implements Graph
 		}
 		
 	}
-	class Y_Axis extends JLabel
-	{
-		private int start_position;
-		private int intervals;
-		private double range;
-		public Y_Axis(int start_position,double range,int intervals)
-		{
-			super();
-			this.start_position=start_position;
-			this.intervals=intervals;
-			this.range=range;
-		}
-		@Override
-		protected void paintComponent(Graphics g)
-		{
-			super.paintComponent(g);
-			Graphics2D g2d=(Graphics2D)g;
-			double height=this.getSize().getHeight();
-			double width=this.getSize().getWidth();
-			Point2D.Float a =new Point2D.Float((float)width-1,00);
-			Point2D.Float b =new Point2D.Float((float)width-1,(float)height);
-			Line2D.Float y_line=new Line2D.Float(a,b);
-			g2d.draw(y_line);
-			float[] y_divisions=AbstractGraph.getlineDivisions(0,height,intervals);
-			float increment=(float)range/intervals;
-			float index=(float)range-increment;
-			for(int i=0;i<y_divisions.length;i++)
-			{
-				
-				Line2D.Float line=new Line2D.Float((float)a.getX()-10,y_divisions[i],(float)a.getX(),y_divisions[i]);
-				g2d.draw(line);
-				g.drawString(String.valueOf(index),0,(int)y_divisions[i]);
-				index=index-increment;
-			}
-		}
-		
-	}
+
 }
