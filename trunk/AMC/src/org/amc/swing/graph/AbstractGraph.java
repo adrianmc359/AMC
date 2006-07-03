@@ -151,5 +151,16 @@ public abstract class AbstractGraph extends DefaultSubject implements Graph
 			return x_values.length;
 		}
 	}
+	public static float[] getlineDivisions(int start_position,double length,int intervals)
+	{
+		float[] positions=new float[intervals-1];
+		double increment=length/intervals;
+		for(int i=0;i<intervals-1;i++)
+		{
+			positions[i]=start_position+(float)(increment*(i+1));
+		}
+		return positions;
+		
+	}
 
 }
