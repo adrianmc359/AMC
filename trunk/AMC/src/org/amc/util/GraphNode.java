@@ -137,7 +137,10 @@ public class GraphNode
 		queue.removeElementAt(0);
 		return o;
 	}
-
+	/**
+	 * 
+	 * @return Label 
+	 */
 	public String getLabel()
 	{
 		return label;
