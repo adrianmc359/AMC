@@ -1,0 +1,76 @@
+<!--
+ Project: APL_Problem_Database
+ file: $URL: file:///home/adrian/Documents/SVNRepository/Java/APL_Problem_Database/trunk/APL_Problem_Database/build.xml $
+ @author adrian
+ @version $Revision: 652 $
+-->
+<project name="AMC" default="dist" basedir="./">
+	<!-- set global properties for this build -->
+	<property name="dist" location="dist"/>
+	 <property name="bin" location="bin"/>
+	<property name="src" location="src"/>
+	<property name="Documentation" location="Documentation"/>
+	
+	<!-- Create layout -->
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp/>
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${dist}"/>
+		<mkdir dir="${bin}"/>
+  	</target>
+	
+	<!--compile the source -->
+	<target name="compile" depends="init"
+		description="compile the source " >
+		<!-- Compile the java code from ${src} into ${build} -->
+		<javac srcdir="${src}" destdir="${bin}">
+			<classpath>
+				<fileset dir="${lib}">
+					<include name="**/*.jar"/>
+				</fileset>
+			</classpath>
+
+		</javac>
+		
+	<!-- create an executable Jar file -->	
+  	</target>
+	<target name="jar" depends="compile">
+		<jar destfile="${dist}/amc.jar" basedir="${bin}" />
+	</target>
+	<!-- clean up -->
+	<target name="clean"	description="clean up" >
+		<!-- Delete the ${build} and ${dist} directory trees -->
+		<delete dir="${dist}"/>
+		<delete dir="${Documentation}/html"/>
+  	</target>
+				
+	<!-- create final distribution layout -->
+	<target name="dist" depends="compile,jar">
+	
+			<!-- Create the time stamp -->
+			<tstamp/>
+	
+	</target>
+	
+	<target name="documentation" depends="dist">
+		<mkdir dir="${Documentation}/html"/>
+		<copy todir="${Documentation}/html">
+			<fileset dir="${Documentation}">
+				<include name="**/*.png"/>
+				<include name="**/*.jpg"/>
+				<include name="**/*.css"/>
+			</fileset>
+		</copy>
+		<apply executable="doxygen">
+			<fileset dir="${basedir}">
+				<include name="Doxyfile"/>
+			</fileset>
+
+		</apply>
+		<jar destfile="${dist}/Documentation/Documentation.jar" basedir="${Documentation}">
+		</jar>
+	</target>
+</project>
+
+
