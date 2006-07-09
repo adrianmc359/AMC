@@ -18,7 +18,7 @@ public class NumberLabel extends JButton
 {
 	public NumberLabel()
 	{
-		Font font=new Font("Serif",Font.PLAIN,8);
+		Font font=new Font("Arial",Font.PLAIN,9);
 		this.setFont(font);
 		this.setBackground(Color.WHITE);
 		this.setPreferredSize(new Dimension(20,10));
