@@ -16,6 +16,10 @@ import org.amc.util.CalendarUtils.MONTH;
 
 public class NumberLabel extends JButton
 {
+	/**
+	 * 
+	 * Constructor for NumberLabel.java
+	 */
 	public NumberLabel()
 	{
 		Font font=new Font("Arial",Font.PLAIN,9);
@@ -25,6 +29,11 @@ public class NumberLabel extends JButton
 		this.setEnabled(false);
 		this.setText(" ");
 	}
+	/**
+	 * 
+	 * Constructor for NumberLabel.java
+	 * @param day
+	 */
 	public NumberLabel(int day)
 	{
 		this();
