@@ -1,8 +1,8 @@
 <!--
  Project: APL_Problem_Database
- file: $URL: file:///home/adrian/Documents/SVNRepository/Java/APL_Problem_Database/trunk/APL_Problem_Database/build.xml $
+ file: $URL$
  @author adrian
- @version $Revision: 652 $
+ @version $Revision$
 -->
 <project name="AMC" default="dist" basedir="./">
 	<!-- set global properties for this build -->
@@ -10,6 +10,7 @@
 	 <property name="bin" location="bin"/>
 	<property name="src" location="src"/>
 	<property name="Documentation" location="Documentation"/>
+	<property name="lib" location="lib"/>
 	
 	<!-- Create layout -->
 	<target name="init">
