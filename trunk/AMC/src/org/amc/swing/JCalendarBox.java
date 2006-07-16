@@ -73,7 +73,7 @@ public class JCalendarBox extends JPanel implements MyObserver
 		int x=(int)this.getLocationOnScreen().getX();
 		int y=(int)(this.getLocationOnScreen().getY()+this.getSize().getHeight());
 		boolean show=!calendar.isVisible();
-		calendar.setPreferredSize(new Dimension(400,200));
+		calendar.setSize(new Dimension(400,200));
 		calendar.setLocation(x,y);
 		calendar.setVisible(show);
 	}

@@ -17,7 +17,7 @@ import javax.swing.ListCellRenderer;
  * @version $Revision$
  */
 
-public class JCalendar extends JPopupMenu implements MyObserver
+public class JCalendar extends JDialog implements MyObserver
 {
 	/**
 	 * Constructor for JCalendar.java
@@ -28,6 +28,8 @@ public class JCalendar extends JPopupMenu implements MyObserver
 	public JCalendar()
 	{
 		super();
+		this.setUndecorated(true);
+		this.setAlwaysOnTop(true);
 		month=new Month();
 		month.attachObserver(this);
 		try
