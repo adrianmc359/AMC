@@ -30,6 +30,7 @@ public class JCalendar extends JDialog implements MyObserver
 		super();
 		this.setUndecorated(true);
 		this.setAlwaysOnTop(true);
+		this.setFocusableWindowState(false);
 		month=new Month();
 		month.attachObserver(this);
 		try
