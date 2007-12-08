@@ -20,7 +20,7 @@ public class EntryLine extends EntryLineTemplate
 	 * Constructor for EntryLine.java
 	 * @param name
 	 */
-	public EntryLine(Enum name)
+	public EntryLine(String name)
 	{
 		super(name,new Dimension(200,25));
 	}
@@ -30,7 +30,7 @@ public class EntryLine extends EntryLineTemplate
 	 * @param name
 	 * @param value
 	 */
-	public EntryLine(Enum name,String value)
+	public EntryLine(String name,String value)
 	{
 		super(name,value,new Dimension(200,25));
 	}
