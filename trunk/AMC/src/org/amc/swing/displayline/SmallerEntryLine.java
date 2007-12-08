@@ -13,14 +13,33 @@ import java.awt.Dimension;
 public class SmallerEntryLine extends EntryLineTemplate
 {
 
+	/**
+	 * 
+	 * Constructor for SmallerEntryLine.java
+	 * @param name
+	 */
 	public SmallerEntryLine(Enum name)
 	{
 		super(name,new Dimension(100,40));
 	}
+	
+	/**
+	 * 
+	 * Constructor for SmallerEntryLine.java
+	 * @param name
+	 * @param value
+	 */
 	public SmallerEntryLine(Enum name,String value)
 	{
 		super(name,value,new Dimension(100,40));
 	}
+	
+	/**
+	 * 
+	 * Constructor for SmallerEntryLine.java
+	 * @param name
+	 * @param value
+	 */
 	public SmallerEntryLine(String name,String value)
 	{
 		super(name,value,new Dimension(100,40));
