@@ -1,5 +1,6 @@
 package org.amc.swing;
 
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.LayoutManager;
 
@@ -30,6 +31,9 @@ import org.amc.util.Subject;
 
 public class DisplayLine extends JPanel implements Subject
 { 
+	public static Dimension DEFAULT_SIZE=new Dimension(200,25);
+	public static Dimension SMALL_SIZE=new Dimension(100,40);
+	
 	private DefaultSubject subject; 
 	
 	LayoutManager layout=new FlowLayout(FlowLayout.LEFT);
@@ -146,6 +150,11 @@ public class DisplayLine extends JPanel implements Subject
 					{
 						JCalendarBox box= (JCalendarBox)component;
 						box.setSelectedItem(value);
+					}
+					else if(component instanceof JLabel)
+					{
+						JLabel label=(JLabel)component;
+						label.setText(String.valueOf(value));
 					}
 				}
 			
