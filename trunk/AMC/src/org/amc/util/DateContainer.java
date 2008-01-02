@@ -11,8 +11,8 @@ import java.text.*;
 
 public class DateContainer
 {
-
-	private Date date;
+	Calendar calendar=Calendar.getInstance();
+	
 	/**
 	 * 
 	 * Constructor for DateContainer.java
@@ -20,7 +20,7 @@ public class DateContainer
 	 */
 	public DateContainer(Date date)
 	{
-		this.date=date;
+		calendar.setTime(date);
 	}
 	/**
 	 * 
@@ -31,11 +31,11 @@ public class DateContainer
 	public DateContainer(String date) throws ParseException
 	{
 		DateFormat df=getDateFormat();
-		this.date=df.parse(date);
+		calendar.setTime(df.parse(date));
 	}
 	public Date getDate()
 	{
-		return date;
+		return calendar.getTime();
 	}
 	/**
 	 * 
@@ -44,7 +44,7 @@ public class DateContainer
 	public String toString()
 	{
 		DateFormat df=getDateFormat();
-		return df.format(this.date);
+		return df.format(calendar.getTime());
 	}
 	/**
 	 * 
@@ -56,4 +56,42 @@ public class DateContainer
 		return df;
 	}
 
+	/**
+	 * Compares day, month, year but not seconds 
+	 * @param date
+	 * @return boolean
+	 */
+	public boolean sameDate(Date date)
+	{
+		return sameDate(this.calendar.getTime(),date);
+		
+	}
+	
+	/**
+	 * Compares day, month, year but not seconds 
+	 * @param date
+	 * @return boolean
+	 */
+	public static boolean sameDate(Date one,Date two)
+	{
+		
+		Calendar calOne=Calendar.getInstance();
+		Calendar calTwo=Calendar.getInstance();
+		calOne.setTime(one);
+		calTwo.setTime(two);
+		
+		if(
+				calOne.get(Calendar.YEAR)==calTwo.get(Calendar.YEAR) &&
+				calOne.get(Calendar.MONTH)==calTwo.get(Calendar.MONTH) &&
+				calOne.get(Calendar.DATE)==calTwo.get(Calendar.DATE)
+				)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
 }
