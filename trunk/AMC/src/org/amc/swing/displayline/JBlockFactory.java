@@ -1,7 +1,9 @@
 package org.amc.swing.displayline;
 
+import java.awt.Color;
 import java.awt.Dimension;
 
+import javax.swing.BorderFactory;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -50,15 +52,29 @@ public class JBlockFactory
 		return  line;
 
 	}
+	
+	/**
+	 * 
+	 * @param name
+	 * @param size
+	 * @return
+	 */
 	public static DisplayLine getPassBlock(String name,Dimension size)
 	{
 		DisplayLine line;
 		JCheckBox chkbox=new JCheckBox();
-		JLabel label=new JLabel("     "+name);
-		label.setPreferredSize(size);
-		chkbox.setPreferredSize(size);
+		//chkbox.setBorder(BorderFactory.createLineBorder(Color.GREEN));
+		JLabel label=new JLabel(name);
+		//label.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+		//label.setPreferredSize(size);
+		//chkbox.setPreferredSize(size);
+		
 		line=new DisplayLine(label,chkbox);
+		line.setPreferredSize(size);
+		line.setMaximumSize(size);
+		
 		line.registerTextComponent(chkbox);
+		//line.setBorder(BorderFactory.createLineBorder(Color.GREEN));
 		return line;
 	}
 	public static DisplayLine getPassBlock(String name)
@@ -74,14 +90,24 @@ public class JBlockFactory
 		return getPassBlock(name.toString(), DisplayLine.DEFAULT_SIZE);
 	}
 	
+	/**
+	 * 
+	 * @param name Value to be placed in the first JLabel
+	 * @param size 
+	 * @return A JComponent containing a two labels 
+	 */
 	public static DisplayLine getLabelBlock(String name,Dimension size)
 	{
 		DisplayLine line;
 		JLabel chkbox=new JLabel();
 		JLabel label=new JLabel("     "+name);
-		label.setPreferredSize(size);
-		chkbox.setPreferredSize(size);
 		line=new DisplayLine(label,chkbox);
+		
+		// Divide length of the between both components
+		Dimension changed=new Dimension(size.width/2,(int)size.getHeight());
+		label.setPreferredSize(changed);
+		chkbox.setPreferredSize(changed);	
+		
 		line.registerTextComponent(chkbox);
 		return line;
 	}
