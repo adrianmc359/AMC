@@ -1,8 +1,5 @@
 package org.amc.util;
 
-import java.util.Observable;
-
-
 /**
  * <p>Project: APL_Problem_Database </p>
  * <p>file: $URL$<p>

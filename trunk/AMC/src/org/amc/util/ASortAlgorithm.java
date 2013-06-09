@@ -1,6 +1,5 @@
 package org.amc.util;
 
-import javax.swing.text.Position;
 
 /**
  * <p>Project: AMC </p>

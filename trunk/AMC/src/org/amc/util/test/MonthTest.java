@@ -17,7 +17,7 @@ public class MonthTest extends TestCase
 	Month month;
 	public static void main(String[] args)
 	{
-		junit.swingui.TestRunner.run(MonthTest.class);
+		//junit.swingui.TestRunner.run(MonthTest.class);
 	}
 
 	
